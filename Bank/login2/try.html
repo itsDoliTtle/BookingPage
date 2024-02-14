@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Login</title>
+    <link rel="stylesheet" type="text/css" href="try.css">
+    <link rel="stylesheet" href="php/log.php">
+</head>
+<body>
+    <nav>
+        <h2 class="logo">Hotel<span>Logo</span></h2>
+        <ul>
+            <li>
+                <a href="/Bank/index.html">Go Back</a>
+            </li>
+        </ul>
+    </nav>
+     
+    
+    <div class="contain">
+    <div class="main">
+        <input type="checkbox" id="chk" aria-hidden="true">
+
+        <div class="signup">
+            
+            <form action="">
+                <label for="chk" aria-hidden="true">Hotel name</label>
+
+                <div class="choose">
+                    <div class="choice">
+                        <p class="tab-links active-link" onclick="opentab('student')">Login</p>
+                        <p class="tab-links" onclick="opentab('superior')">Register</p>
+
+                                <!-- <a href="#"></a>
+                                <a href="#">Superior</a> -->
+                        
+                    </div>
+                </div>
+
+                <div class="form active-tab" id="student">
+                    <input type="text" name="txt" placeholder="Username" required="">
+                    <input type="email" name="email" placeholder="Email" required="">
+                    <input type="password" name="passwd" placeholder="Password" required="">
+                    <button class="btn">Sign in</button>
+                </div>
+
+                <div class="form set" id="superior" >
+                    <input type="text" name="txt" placeholder="First Name" required="">
+                    <input type="text" name="txt" placeholder="Last Name" required="">
+                    <input type="email" name="email" placeholder="Email" required="">
+                    <input type="tel" name="tel" placeholder="Phone.No" required="">
+                    <input type="text" name="txt" placeholder="Address" required="">
+
+                    <input type="password" name="passwd" placeholder="Password" required="">
+                    <button class="btn">Sign up</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- <div class="login">
+            <form action="">
+                <label for="chk" aria-hidden="true">Login</label>
+                <input type="email" name="email" placeholder="Email" required="">
+                <input type="password" name="passwd" placeholder="Password" required="">
+                <button class="btn">Login</button>
+                <a href="#">Forgot password ?</a>
+                
+            </form>
+        </div> -->
+
+    </div>
+    </div>
+    
+    <script src="switch.js"></script>
+</body>
+</html>
